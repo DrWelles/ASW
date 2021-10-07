@@ -1,3 +1,3 @@
 # ASW
 A UNIFIED FRAMEWORK FOR AUTOMATIC SONG WRITING
-## Relase the code after the paper is accepted
+## Release the code after the paper is accepted
