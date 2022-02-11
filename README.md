@@ -23,7 +23,7 @@ We adapt GPT-like self-supervised learning task as our pre-training strategy rat
 
 GPT-like self-supervised learning task (encoder only pre-training task) can be formulated as follow:
 
-$ L(coppus) = \Sigma_{n=K}^N p(token_n|token_{n-K},token_{n-K+1},...,token_{n-1};\Theta)$
+![1](http://latex.codecogs.com/svg.latex? L(coppus) = \Sigma_{n=K}^N p(token_n|token_{n-K},token_{n-K+1},...,token_{n-1};\Theta) )
 
 where $coppus$ is a token sequence with $N$ tokens ($ coppus = (token_1,token_2,...,token_{N})$) and $\Theta$ is the parameters of model. In our paper $\Theta$ consists of Transformer encoders $\theta_x$ and decoders $\theta_y^*$ (the  part of decoder paramters is skipped on pre-training stages).
 
