@@ -23,7 +23,7 @@ We adapt GPT-like self-supervised learning task as our pre-training strategy rat
 
 GPT-like self-supervised learning task (encoder only pre-training task) can be formulated as follow:
 
-![1](http://latex.codecogs.com/svg.latex? L(coppus) = \Sigma_{n=K}^N p(token_n|token_{n-K},token_{n-K+1},...,token_{n-1};\Theta) )
+![1](https://github.com/DrWelles/ASW/blob/main/pic/formulation1_20220212000040.png)
 
 where $coppus$ is a token sequence with $N$ tokens ($ coppus = (token_1,token_2,...,token_{N})$) and $\Theta$ is the parameters of model. In our paper $\Theta$ consists of Transformer encoders $\theta_x$ and decoders $\theta_y^*$ (the  part of decoder paramters is skipped on pre-training stages).
 
@@ -39,7 +39,7 @@ The table above is the perplexity results with different pre-training setting. S
 
 We adapt Machine Translation framework for corss domain generation tasks (L2M,M2L), which means the melody and lyric can be treated as two kinds of languages and can be formated as follow:
 
-$ L(tar|src;\Theta) = \Sigma_{n=1}^{|tar|} p(tar_n|src;tar_{<n};\Theta) $
+![](https://github.com/DrWelles/ASW/blob/main/pic/formulation2_20220212000040.png)
 
 where $tar$ is a token sequence with $|tar|$ tokens  and $\Theta$ is the parameters of model. In our paper $\Theta$ consists of Transformer encoders $\theta_x$ and decoders $\theta_y$ (all decoder paramters will be trained on fine-tuning stage).  
 
