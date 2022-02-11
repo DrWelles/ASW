@@ -15,7 +15,7 @@ In previous literature, four taskshave  been  investigated  for  ASW:
 
 We aim to address these challenges with a unifiedframework for ASW under the low resource condition.  Based  on SongMASS, we proposed a more general pre-training strategy that exploits unpaired data and a new dual transformation loss that better utilzes paired data to further alleviate the data scarcity issue of paired data.
 
-![image-20220211174427854](pic\image-20220211174427854.png)
+![image-20220211174427854](https://github.com/DrWelles/ASW/blob/main/pic/image-20220211174427854.png)
 
 ### Pre-training With Unpaired data
 
@@ -29,7 +29,7 @@ where $coppus$ is a token sequence with $N$ tokens ($ coppus = (token_1,token_2,
 
 MASS task is a kind of encoder-decoder pre-training pre-training task which results huge inductive bias for model and hurts the performance for single domian generation tasks (L2L, M2M).
 
-![image-20220211173228031](pic\image-20220211173228031.png)
+![image-20220211173228031](https://github.com/DrWelles/ASW/blob/main/pic/image-20220211173228031.png)
 
 The table above is the perplexity results with different pre-training setting. S0 is the MASS pre-training and S1 and S2 stand for the two pre-training stages in Section 2.1 of our paper.  The best performance of MASS strategy is $+S0+S1$ , whose avergae perplexity  is 22.82, far from baseline performance. We did not report the SongMASS results in all  experiments for a fair comparision consideration due to the large gap in objective  indicators.
 
@@ -47,7 +47,7 @@ The paired data is much less than unpaired data and we add dual  transformation 
 
 ### Dual  Transformation  Loss
 
-![image-20220211174635962](pic\image-20220211174635962.png)
+![image-20220211174635962](https://github.com/DrWelles/ASW/blob/main/pic/image-20220211174635962.png)
 
 
 
